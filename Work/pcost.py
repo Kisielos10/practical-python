@@ -8,7 +8,4 @@ with open('Data/portfolio.csv', 'rt') as file:
     for line in file:
         numberOfStocks = int(line.split(',')[1])
         prices += float(line.split(',')[2]) * numberOfStocks
-
-
-
 print("Total cost",prices)
